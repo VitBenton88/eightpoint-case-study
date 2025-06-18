@@ -1,75 +1,10 @@
-# Nuxt Minimal Starter
+# New Tab Page Clone (Vue + Nuxt)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project recreates a simplified browser new tab experience using Vue.js and Nuxt. It includes:
 
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- A functional search bar (redirects to Yahoo search)
+- Server-side rendered quick link icons
+- Tabbed navigation for categorized news feeds
+- Featured and standard news tiles with metadata
+- Reusable, composable UI components
+- Interaction tracking for impressions and clicks
