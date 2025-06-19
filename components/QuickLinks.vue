@@ -6,27 +6,27 @@ import Link from './Link.vue';
   <nav>
     <ul>
       <li>
-        <Link href="https://facebook.com" target="_blank">
+        <Link href="https://facebook.com" target="_blank" aria-label="Visit Facebook">
         <Icon name="uil:facebook" size="32" />
         </Link>
       </li>
       <li>
-        <Link href="https://youtube.com" target="_blank">
+        <Link href="https://youtube.com" target="_blank" aria-label="Visit YouTube">
         <Icon name="uil:youtube" size="32" />
         </Link>
       </li>
       <li>
-        <Link href="https://spotify.com" target="_blank">
+        <Link href="https://spotify.com" target="_blank" aria-label="Visit Spotify">
         <Icon name="uil:music" size="32" />
         </Link>
       </li>
       <li>
-        <Link href="https://dribbble.com" target="_blank">
+        <Link href="https://dribbble.com" target="_blank" aria-label="Visit Dribble">
         <Icon name="uil:dribbble" size="32" />
         </Link>
       </li>
       <li>
-        <Link href="https://paypal.com" target="_blank">
+        <Link href="https://paypal.com" target="_blank" aria-label="Visit PayPal">
         <Icon name="uil:paypal" size="32" />
         </Link>
       </li>
