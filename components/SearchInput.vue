@@ -14,7 +14,7 @@ const handleSubmit = () => {
 <template>
   <form @submit.prevent="handleSubmit">
     <button type="submit">
-      <Icon name="uil:search" style="color: black" />
+      <Icon name="uil:search" />
     </button>
     <input
       v-model="query"
