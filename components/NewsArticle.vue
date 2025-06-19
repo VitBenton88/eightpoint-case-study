@@ -4,14 +4,13 @@ import AnchorLink from './AnchorLink.vue';
 defineProps({
   article: {
     type: Object,
-    required: true,
-    default: {
+    default: () => ({
       image: '',
       source: '',
       tag: '',
       timestamp: '',
       title: '',
-    }
+    })
   }
 })
 

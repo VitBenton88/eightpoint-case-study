@@ -6,14 +6,14 @@ defineProps({
 })
 </script>
 
-<style scoped>
-a {
-  color: black;
-}
-</style>
-
 <template>
   <a :href="href" :target="target" :rel="rel" v-bind="$attrs">
     <slot />
   </a>
 </template>
+
+<style scoped>
+a {
+  color: black;
+}
+</style>
