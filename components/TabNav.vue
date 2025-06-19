@@ -1,7 +1,8 @@
 <template>
   <div class="tabs">
     <nav class="tab-buttons">
-      <button v-for="(tab, index) in tabs" :key="index" :class="{ active: selectedTab === tab.id }"
+      <button
+v-for="(tab, index) in tabs" :key="index" :class="{ active: selectedTab === tab.id }"
         @click="handleClick(tab.id)">
         {{ tab.label }}
       </button>

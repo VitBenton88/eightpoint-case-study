@@ -13,7 +13,7 @@ const props = defineProps({
     :rel="rel"
     v-bind="$attrs"
   >
-    <slot></slot>
+    <slot/>
   </a>
 </template>
 

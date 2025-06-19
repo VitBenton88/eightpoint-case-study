@@ -22,7 +22,7 @@ const handleSubmit = () => {
       type="search"
       required
       placeholder="Search the web or type a URL"
-    />
+    >
   </form>
 </template>
 

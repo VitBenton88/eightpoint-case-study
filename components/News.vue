@@ -31,6 +31,6 @@ const selectTab = tabId => selectedTab.value = tabId
 </script>
 
 <template>
-  <TabNav :tabs :selectedTab @selectTab="selectTab" />
+  <TabNav :tabs :selected-tab @select-tab="selectTab" />
   <Feed :items="articles" />
 </template>
