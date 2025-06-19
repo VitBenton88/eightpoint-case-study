@@ -7,13 +7,33 @@ import Link from './Link.vue';
     <ul>
       <li>
         <Link href="https://facebook.com" target="_blank">
-          <Icon name="uil:facebook" size="24" />
+        <Icon name="uil:facebook" size="32" />
         </Link>
       </li>
       <li>
         <Link href="https://youtube.com" target="_blank">
-          <Icon name="uil:youtube" size="24" />
+        <Icon name="uil:youtube" size="32" />
         </Link>
+      </li>
+      <li>
+        <Link href="https://spotify.com" target="_blank">
+        <Icon name="uil:music" size="32" />
+        </Link>
+      </li>
+      <li>
+        <Link href="https://dribbble.com" target="_blank">
+        <Icon name="uil:dribbble" size="32" />
+        </Link>
+      </li>
+      <li>
+        <Link href="https://paypal.com" target="_blank">
+        <Icon name="uil:paypal" size="32" />
+        </Link>
+      </li>
+      <li>
+        <button type="button">
+          <Icon name="uil:plus" size="32" />
+        </button>
       </li>
     </ul>
   </nav>
@@ -26,6 +46,7 @@ ul {
   padding: 0;
   list-style: none;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 li:not(:last-of-type) {
