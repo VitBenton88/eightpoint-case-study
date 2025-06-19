@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watchEffect } from 'vue'
+import { ref } from 'vue'
 import { useAsyncData } from '#app'
 import Feed from '@/components/Feed.vue'
 import TabNav from '@/components/TabNav.vue'
@@ -17,9 +17,8 @@ const tabs = [
 ]
 
 const selectedTab = ref('home')
-const emit = defineEmits(['update:selectedTab'])
 
-const { data: articles, refresh } = await useAsyncData(
+const { data: articles } = await useAsyncData(
   'articles',
   () => $fetch('/api/news', {
     query: { category: selectedTab.value }
