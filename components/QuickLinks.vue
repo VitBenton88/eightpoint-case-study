@@ -1,5 +1,5 @@
 <script setup>
-import Link from './Link.vue';
+import AnchorLink from './AnchorLink.vue';
 
 const links = [
   { href: 'https://facebook.com', icon: 'uil:facebook', label: 'Visit Facebook' },
@@ -14,9 +14,9 @@ const links = [
   <nav>
     <ul>
       <li v-for="link in links" :key="link.href">
-        <Link :href="link.href" target="_blank" :aria-label="link.label">
-        <Icon :name="link.icon" size="32" />
-        </Link>
+        <AnchorLink :href="link.href" target="_blank" :aria-label="link.label">
+          <Icon :name="link.icon" size="32" />
+        </AnchorLink>
       </li>
       <li>
         <button type="button">
