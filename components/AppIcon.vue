@@ -1,7 +1,3 @@
-<template>
-  <Icon :name="name" :size="size" />
-</template>
-
 <script setup>
 defineProps({
   name: {
@@ -14,3 +10,7 @@ defineProps({
   }
 })
 </script>
+
+<template>
+  <Icon :name="name" :size="size" />
+</template>

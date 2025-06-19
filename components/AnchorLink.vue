@@ -1,9 +1,3 @@
-<template>
-  <a :href="href" :target="target" :rel="rel" v-bind="$attrs">
-    <slot />
-  </a>
-</template>
-
 <script setup>
 defineProps({
   href: { type: String, required: true },
@@ -17,3 +11,9 @@ a {
   color: black;
 }
 </style>
+
+<template>
+  <a :href="href" :target="target" :rel="rel" v-bind="$attrs">
+    <slot />
+  </a>
+</template>
