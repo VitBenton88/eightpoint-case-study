@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "title": "Top Headlines You Need to Know Today",
+    "source": "dailyreport.com",
+    "timestamp": "2025-06-19T07:00:00Z",
+    "isFeatured": true,
+    "category": "home"
+  },
+  {
+    "id": 2,
+    "title": "Weekend Checklist: What’s Happening Around Town",
+    "source": "homenews.us",
+    "timestamp": "2025-06-16T08:30:00Z",
+    "isFeatured": false,
+    "category": "home"
+  },
+  {
+    "id": 3,
+    "title": "World Leaders Meet for Emergency Climate Summit",
+    "source": "globalnews.org",
+    "timestamp": "2025-06-18T21:45:00Z",
+    "isFeatured": false,
+    "category": "news"
+  },
+  {
+    "id": 4,
+    "title": "Breaking: Major Earthquake Rattles West Coast",
+    "source": "earlychip.com",
+    "tag": "Breaking",
+    "timestamp": "2025-06-19T09:00:00Z",
+    "isFeatured": true,
+    "category": "news"
+  },
+  {
+    "id": 5,
+    "title": "NBA Finals: Warriors Take Game 1 in Overtime",
+    "source": "sportsnow.tv",
+    "timestamp": "2025-06-16T13:50:00Z",
+    "isFeatured": true,
+    "category": "sports"
+  },
+  {
+    "id": 6,
+    "title": "Olympic Qualifiers: U.S. Track Team Makes History",
+    "source": "sportshype.net",
+    "timestamp": "2025-06-17T18:25:00Z",
+    "isFeatured": false,
+    "category": "sports"
+  },
+  {
+    "id": 7,
+    "title": "Stock Market Rebounds Amid Tech Optimism",
+    "source": "fintrend.com",
+    "timestamp": "2025-06-18T14:30:00Z",
+    "isFeatured": false,
+    "category": "money"
+  },
+  {
+    "id": 8,
+    "title": "How to Build a Recession-Proof Investment Portfolio",
+    "source": "moneywise.org",
+    "tag": "Sponsored",
+    "timestamp": "2025-06-15T10:10:00Z",
+    "isFeatured": true,
+    "category": "money"
+  },
+  {
+    "id": 9,
+    "title": "Home Decor Trends That Are Making a Comeback",
+    "source": "lifestylebeat.net",
+    "timestamp": "2025-06-17T11:10:00Z",
+    "isFeatured": false,
+    "category": "lifestyle"
+  },
+  {
+    "id": 10,
+    "title": "How Gen Z Is Redefining Self-Care in 2025",
+    "source": "modernlife.com",
+    "timestamp": "2025-06-13T09:15:00Z",
+    "isFeatured": false,
+    "category": "lifestyle"
+  },
+  {
+    "id": 11,
+    "title": "Senate Approves New Infrastructure Funding Bill",
+    "source": "politicochannel.org",
+    "tag": "Breaking",
+    "timestamp": "2025-06-19T08:00:00Z",
+    "isFeatured": false,
+    "category": "politics"
+  },
+  {
+    "id": 12,
+    "title": "Election 2026: What Early Polling Suggests",
+    "source": "govwatch.org",
+    "timestamp": "2025-06-14T12:00:00Z",
+    "isFeatured": true,
+    "category": "politics"
+  },
+  {
+    "id": 13,
+    "title": "The Best Foods to Lower Blood Pressure Naturally",
+    "source": "healthwise.com",
+    "timestamp": "2025-06-15T16:25:00Z",
+    "isFeatured": false,
+    "category": "health"
+  },
+  {
+    "id": 14,
+    "title": "New Study Links Sleep Quality to Heart Health",
+    "source": "medicnews.net",
+    "timestamp": "2025-06-18T06:45:00Z",
+    "isFeatured": false,
+    "category": "health"
+  },
+  {
+    "id": 15,
+    "title": "Easy Weeknight Dinners That Take Under 30 Minutes",
+    "source": "foodcorner.net",
+    "timestamp": "2025-06-13T19:20:00Z",
+    "isFeatured": false,
+    "category": "food"
+  },
+  {
+    "id": 16,
+    "title": "8 Recipes That Went Viral on TikTok This Month",
+    "source": "kitchentrendz.com",
+    "tag": "Sponsored",
+    "timestamp": "2025-06-17T15:10:00Z",
+    "isFeatured": true,
+    "category": "food"
+  },
+  {
+    "id": 17,
+    "title": "New Streaming Platform Targets Family Entertainment",
+    "source": "screenhub.com",
+    "tag": "Sponsored",
+    "timestamp": "2025-06-14T10:30:00Z",
+    "isFeatured": false,
+    "category": "entertainment"
+  },
+  {
+    "id": 18,
+    "title": "Summer Blockbusters to Watch This July",
+    "source": "movienightmag.com",
+    "timestamp": "2025-06-16T17:40:00Z",
+    "isFeatured": true,
+    "category": "entertainment"
+  }
+]
