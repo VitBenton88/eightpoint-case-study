@@ -1,33 +1,21 @@
 <script setup>
 import Link from './Link.vue';
+
+const links = [
+  { href: 'https://facebook.com', icon: 'uil:facebook', label: 'Visit Facebook' },
+  { href: 'https://youtube.com', icon: 'uil:youtube', label: 'Visit YouTube' },
+  { href: 'https://spotify.com', icon: 'uil:music', label: 'Visit Spotify' },
+  { href: 'https://dribbble.com', icon: 'uil:dribbble', label: 'Visit Dribble' },
+  { href: 'https://paypal.com', icon: 'uil:paypal', label: 'Visit PayPal' },
+]
 </script>
 
 <template>
   <nav>
     <ul>
-      <li>
-        <Link href="https://facebook.com" target="_blank" aria-label="Visit Facebook">
-        <Icon name="uil:facebook" size="32" />
-        </Link>
-      </li>
-      <li>
-        <Link href="https://youtube.com" target="_blank" aria-label="Visit YouTube">
-        <Icon name="uil:youtube" size="32" />
-        </Link>
-      </li>
-      <li>
-        <Link href="https://spotify.com" target="_blank" aria-label="Visit Spotify">
-        <Icon name="uil:music" size="32" />
-        </Link>
-      </li>
-      <li>
-        <Link href="https://dribbble.com" target="_blank" aria-label="Visit Dribble">
-        <Icon name="uil:dribbble" size="32" />
-        </Link>
-      </li>
-      <li>
-        <Link href="https://paypal.com" target="_blank" aria-label="Visit PayPal">
-        <Icon name="uil:paypal" size="32" />
+      <li v-for="(link, index) in links" :key="link.href">
+        <Link :href="link.href" target="_blank" :aria-label="link.label">
+        <Icon :name="link.icon" size="32" />
         </Link>
       </li>
       <li>
