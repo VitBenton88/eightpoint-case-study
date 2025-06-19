@@ -13,7 +13,7 @@ const links = [
 <template>
   <nav>
     <ul>
-      <li v-for="(link, index) in links" :key="link.href">
+      <li v-for="link in links" :key="link.href">
         <Link :href="link.href" target="_blank" :aria-label="link.label">
         <Icon :name="link.icon" size="32" />
         </Link>

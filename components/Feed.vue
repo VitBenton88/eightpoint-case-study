@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   items: {
     type: Array,
     required: true

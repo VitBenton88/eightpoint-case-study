@@ -2,8 +2,11 @@
   <div class="tabs">
     <nav class="tab-buttons">
       <button
-v-for="(tab, index) in tabs" :key="index" :class="{ active: selectedTab === tab.id }"
-        @click="handleClick(tab.id)">
+        v-for="(tab, index) in tabs"
+        :key="index"
+        :class="{ active: selectedTab === tab.id }"
+        @click="handleClick(tab.id)"
+      >
         {{ tab.label }}
       </button>
     </nav>
@@ -11,8 +14,9 @@ v-for="(tab, index) in tabs" :key="index" :class="{ active: selectedTab === tab.
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   selectedTab: {
+    type: String,
     required: true
   },
   tabs: {
