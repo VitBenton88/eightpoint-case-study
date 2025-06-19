@@ -52,4 +52,8 @@ ul {
 li:not(:last-of-type) {
   margin-right: .5em;
 }
+
+button {
+  cursor: pointer;
+}
 </style>
