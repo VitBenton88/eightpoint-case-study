@@ -3,6 +3,7 @@
     <NuxtRouteAnnouncer />
     <QuickLinks />
     <SearchInput />
+    <News />
   </main>
 </template>
 
