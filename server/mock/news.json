@@ -80,7 +80,7 @@
     "timestamp": "2025-06-17T11:10:00Z",
     "isFeatured": false,
     "category": "lifestyle",
-    "image": "https://picsum.photos/id/245/500/250"
+    "image": "https://picsum.photos/id/45/500/250"
   },
   {
     "id": 10,
@@ -89,7 +89,7 @@
     "timestamp": "2025-06-13T09:15:00Z",
     "isFeatured": false,
     "category": "lifestyle",
-    "image": "https://picsum.photos/id/246/500/250"
+    "image": "https://picsum.photos/id/345/500/250"
   },
   {
     "id": 11,
