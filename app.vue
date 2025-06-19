@@ -1,9 +1,7 @@
 <template>
   <main>
     <NuxtRouteAnnouncer />
-    <div class="search">
-      <SearchInput />
-    </div>
+    <SearchInput />
   </main>
 </template>
 
@@ -11,11 +9,6 @@
 main {
   display: flex;
   justify-content: center;
-  padding: 1rem;
-  width: 100%;
-}
-
-.search {
   padding: 1rem;
 }
 </style>

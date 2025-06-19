@@ -12,15 +12,45 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <form @submit.prevent="handleSubmit" class="flex justify-center mt-10">
+  <form @submit.prevent="handleSubmit">
+    <button type="submit">
+      <Icon name="uil:search" style="color: black" />
+    </button>
     <input
       v-model="query"
-      type="text"
+      name="search"
+      type="search"
+      required
       placeholder="Search the web or type a URL"
-      class="w-full max-w-md p-3 border rounded"
     />
-    <button type="submit" class="ml-2 px-4 py-3 bg-blue-600 text-white rounded">
-      Search
-    </button>
   </form>
 </template>
+
+<style scoped>
+form {
+  display: flex;
+  border: 1px solid #666; 
+  border-radius: 25px;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+button[type="submit"] {
+	margin-right: 1rem;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer; 
+	background: none;
+}
+
+input[type="search"] {
+	border: none;  
+	background-color: white;
+	outline: none;
+	padding-right: 10px;
+  width: 100%;
+}
+</style>
