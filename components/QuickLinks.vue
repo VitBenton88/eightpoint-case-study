@@ -1,5 +1,6 @@
 <script setup>
 import AnchorLink from './AnchorLink.vue';
+import AppIcon from './AppIcon.vue';
 
 const links = [
   { href: 'https://facebook.com', icon: 'uil:facebook', label: 'Visit Facebook' },
@@ -15,12 +16,12 @@ const links = [
     <ul>
       <li v-for="link in links" :key="link.href">
         <AnchorLink :href="link.href" target="_blank" :aria-label="link.label">
-          <Icon :name="link.icon" size="32" />
+          <AppIcon :name="link.icon" size="32" />
         </AnchorLink>
       </li>
       <li>
         <button type="button">
-          <Icon name="uil:plus" size="32" />
+          <AppIcon name="uil:plus" size="32" />
         </button>
       </li>
     </ul>
