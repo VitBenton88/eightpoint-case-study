@@ -6,7 +6,8 @@
     "timestamp": "2025-06-19T07:00:00Z",
     "isFeatured": true,
     "category": "news",
-    "image": "https://picsum.photos/id/237/500/250"
+    "image": "https://picsum.photos/id/237/500/250",
+    "href": "https://dailyreport.com/article/1"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "timestamp": "2025-06-16T08:30:00Z",
     "isFeatured": false,
     "category": "news",
-    "image": "https://picsum.photos/id/238/500/250"
+    "image": "https://picsum.photos/id/238/500/250",
+    "href": "https://homenews.us/article/2"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "timestamp": "2025-06-18T21:45:00Z",
     "isFeatured": false,
     "category": "news",
-    "image": "https://picsum.photos/id/239/500/250"
+    "image": "https://picsum.photos/id/239/500/250",
+    "href": "https://globalnews.org/article/3"
   },
   {
     "id": 4,
@@ -34,7 +37,8 @@
     "timestamp": "2025-06-19T09:00:00Z",
     "isFeatured": false,
     "category": "news",
-    "image": "https://picsum.photos/id/240/500/250"
+    "image": "https://picsum.photos/id/240/500/250",
+    "href": "https://earlychip.com/article/4"
   },
   {
     "id": 5,
@@ -43,7 +47,8 @@
     "timestamp": "2025-06-16T13:50:00Z",
     "isFeatured": true,
     "category": "sports",
-    "image": "https://picsum.photos/id/241/500/250"
+    "image": "https://picsum.photos/id/241/500/250",
+    "href": "https://sportsnow.tv/article/5"
   },
   {
     "id": 6,
@@ -52,7 +57,8 @@
     "timestamp": "2025-06-17T18:25:00Z",
     "isFeatured": false,
     "category": "sports",
-    "image": "https://picsum.photos/id/242/500/250"
+    "image": "https://picsum.photos/id/242/500/250",
+    "href": "https://sportshype.net/article/6"
   },
   {
     "id": 7,
@@ -61,7 +67,8 @@
     "timestamp": "2025-06-18T14:30:00Z",
     "isFeatured": false,
     "category": "money",
-    "image": "https://picsum.photos/id/243/500/250"
+    "image": "https://picsum.photos/id/243/500/250",
+    "href": "https://fintrend.com/article/7"
   },
   {
     "id": 8,
@@ -71,7 +78,8 @@
     "timestamp": "2025-06-15T10:10:00Z",
     "isFeatured": true,
     "category": "money",
-    "image": "https://picsum.photos/id/244/500/250"
+    "image": "https://picsum.photos/id/244/500/250",
+    "href": "https://moneywise.org/article/8"
   },
   {
     "id": 9,
@@ -80,7 +88,8 @@
     "timestamp": "2025-06-17T11:10:00Z",
     "isFeatured": false,
     "category": "lifestyle",
-    "image": "https://picsum.photos/id/45/500/250"
+    "image": "https://picsum.photos/id/45/500/250",
+    "href": "https://lifestylebeat.net/article/9"
   },
   {
     "id": 10,
@@ -89,7 +98,8 @@
     "timestamp": "2025-06-13T09:15:00Z",
     "isFeatured": false,
     "category": "lifestyle",
-    "image": "https://picsum.photos/id/345/500/250"
+    "image": "https://picsum.photos/id/345/500/250",
+    "href": "https://modernlife.com/article/10"
   },
   {
     "id": 11,
@@ -99,7 +109,8 @@
     "timestamp": "2025-06-19T08:00:00Z",
     "isFeatured": false,
     "category": "politics",
-    "image": "https://picsum.photos/id/247/500/250"
+    "image": "https://picsum.photos/id/247/500/250",
+    "href": "https://politicochannel.org/article/11"
   },
   {
     "id": 12,
@@ -108,7 +119,8 @@
     "timestamp": "2025-06-14T12:00:00Z",
     "isFeatured": true,
     "category": "politics",
-    "image": "https://picsum.photos/id/248/500/250"
+    "image": "https://picsum.photos/id/248/500/250",
+    "href": "https://govwatch.org/article/12"
   },
   {
     "id": 13,
@@ -117,7 +129,8 @@
     "timestamp": "2025-06-15T16:25:00Z",
     "isFeatured": false,
     "category": "health",
-    "image": "https://picsum.photos/id/249/500/250"
+    "image": "https://picsum.photos/id/249/500/250",
+    "href": "https://healthwise.com/article/13"
   },
   {
     "id": 14,
@@ -126,7 +139,8 @@
     "timestamp": "2025-06-18T06:45:00Z",
     "isFeatured": false,
     "category": "health",
-    "image": "https://picsum.photos/id/250/500/250"
+    "image": "https://picsum.photos/id/250/500/250",
+    "href": "https://medicnews.net/article/14"
   },
   {
     "id": 15,
@@ -135,7 +149,8 @@
     "timestamp": "2025-06-13T19:20:00Z",
     "isFeatured": false,
     "category": "food",
-    "image": "https://picsum.photos/id/251/500/250"
+    "image": "https://picsum.photos/id/251/500/250",
+    "href": "https://foodcorner.net/article/15"
   },
   {
     "id": 16,
@@ -145,7 +160,8 @@
     "timestamp": "2025-06-17T15:10:00Z",
     "isFeatured": true,
     "category": "food",
-    "image": "https://picsum.photos/id/252/500/250"
+    "image": "https://picsum.photos/id/252/500/250",
+    "href": "https://kitchentrendz.com/article/16"
   },
   {
     "id": 17,
@@ -155,7 +171,8 @@
     "timestamp": "2025-06-14T10:30:00Z",
     "isFeatured": false,
     "category": "entertainment",
-    "image": "https://picsum.photos/id/253/500/250"
+    "image": "https://picsum.photos/id/253/500/250",
+    "href": "https://screenhub.com/article/17"
   },
   {
     "id": 18,
@@ -164,6 +181,7 @@
     "timestamp": "2025-06-16T17:40:00Z",
     "isFeatured": true,
     "category": "entertainment",
-    "image": "https://picsum.photos/id/254/500/250"
+    "image": "https://picsum.photos/id/254/500/250",
+    "href": "https://movienightmag.com/article/18"
   }
 ]
