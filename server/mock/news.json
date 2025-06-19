@@ -5,7 +5,7 @@
     "source": "dailyreport.com",
     "timestamp": "2025-06-19T07:00:00Z",
     "isFeatured": true,
-    "category": "home"
+    "category": "news"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "source": "homenews.us",
     "timestamp": "2025-06-16T08:30:00Z",
     "isFeatured": false,
-    "category": "home"
+    "category": "news"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "source": "earlychip.com",
     "tag": "Breaking",
     "timestamp": "2025-06-19T09:00:00Z",
-    "isFeatured": true,
+    "isFeatured": false,
     "category": "news"
   },
   {
