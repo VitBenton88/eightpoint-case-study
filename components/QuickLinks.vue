@@ -31,11 +31,11 @@ const links = [
 <style scoped>
 ul {
   display: flex;
-  margin: 0;
-  padding: 0;
   list-style: none;
-  width: 100%;
   flex-wrap: wrap;
+  margin: 2rem 0 0;
+  padding: 0;
+  width: 100%;
 }
 
 li:not(:last-of-type) {

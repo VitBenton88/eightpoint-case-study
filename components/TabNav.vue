@@ -27,10 +27,6 @@ const handleClick = tab => emit('selectTab', tab)
 </template>
 
 <style scoped>
-.tabs {
-  margin-top: 5rem;
-}
-
 .tab-buttons {
   display: flex;
   flex-wrap: wrap;
