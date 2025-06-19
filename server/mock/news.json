@@ -5,7 +5,8 @@
     "source": "dailyreport.com",
     "timestamp": "2025-06-19T07:00:00Z",
     "isFeatured": true,
-    "category": "news"
+    "category": "news",
+    "image": "https://picsum.photos/id/237/500/250"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "source": "homenews.us",
     "timestamp": "2025-06-16T08:30:00Z",
     "isFeatured": false,
-    "category": "news"
+    "category": "news",
+    "image": "https://picsum.photos/id/238/500/250"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "source": "globalnews.org",
     "timestamp": "2025-06-18T21:45:00Z",
     "isFeatured": false,
-    "category": "news"
+    "category": "news",
+    "image": "https://picsum.photos/id/239/500/250"
   },
   {
     "id": 4,
@@ -30,7 +33,8 @@
     "tag": "Breaking",
     "timestamp": "2025-06-19T09:00:00Z",
     "isFeatured": false,
-    "category": "news"
+    "category": "news",
+    "image": "https://picsum.photos/id/240/500/250"
   },
   {
     "id": 5,
@@ -38,7 +42,8 @@
     "source": "sportsnow.tv",
     "timestamp": "2025-06-16T13:50:00Z",
     "isFeatured": true,
-    "category": "sports"
+    "category": "sports",
+    "image": "https://picsum.photos/id/241/500/250"
   },
   {
     "id": 6,
@@ -46,7 +51,8 @@
     "source": "sportshype.net",
     "timestamp": "2025-06-17T18:25:00Z",
     "isFeatured": false,
-    "category": "sports"
+    "category": "sports",
+    "image": "https://picsum.photos/id/242/500/250"
   },
   {
     "id": 7,
@@ -54,7 +60,8 @@
     "source": "fintrend.com",
     "timestamp": "2025-06-18T14:30:00Z",
     "isFeatured": false,
-    "category": "money"
+    "category": "money",
+    "image": "https://picsum.photos/id/243/500/250"
   },
   {
     "id": 8,
@@ -63,7 +70,8 @@
     "tag": "Sponsored",
     "timestamp": "2025-06-15T10:10:00Z",
     "isFeatured": true,
-    "category": "money"
+    "category": "money",
+    "image": "https://picsum.photos/id/244/500/250"
   },
   {
     "id": 9,
@@ -71,7 +79,8 @@
     "source": "lifestylebeat.net",
     "timestamp": "2025-06-17T11:10:00Z",
     "isFeatured": false,
-    "category": "lifestyle"
+    "category": "lifestyle",
+    "image": "https://picsum.photos/id/245/500/250"
   },
   {
     "id": 10,
@@ -79,7 +88,8 @@
     "source": "modernlife.com",
     "timestamp": "2025-06-13T09:15:00Z",
     "isFeatured": false,
-    "category": "lifestyle"
+    "category": "lifestyle",
+    "image": "https://picsum.photos/id/246/500/250"
   },
   {
     "id": 11,
@@ -88,7 +98,8 @@
     "tag": "Breaking",
     "timestamp": "2025-06-19T08:00:00Z",
     "isFeatured": false,
-    "category": "politics"
+    "category": "politics",
+    "image": "https://picsum.photos/id/247/500/250"
   },
   {
     "id": 12,
@@ -96,7 +107,8 @@
     "source": "govwatch.org",
     "timestamp": "2025-06-14T12:00:00Z",
     "isFeatured": true,
-    "category": "politics"
+    "category": "politics",
+    "image": "https://picsum.photos/id/248/500/250"
   },
   {
     "id": 13,
@@ -104,7 +116,8 @@
     "source": "healthwise.com",
     "timestamp": "2025-06-15T16:25:00Z",
     "isFeatured": false,
-    "category": "health"
+    "category": "health",
+    "image": "https://picsum.photos/id/249/500/250"
   },
   {
     "id": 14,
@@ -112,7 +125,8 @@
     "source": "medicnews.net",
     "timestamp": "2025-06-18T06:45:00Z",
     "isFeatured": false,
-    "category": "health"
+    "category": "health",
+    "image": "https://picsum.photos/id/250/500/250"
   },
   {
     "id": 15,
@@ -120,7 +134,8 @@
     "source": "foodcorner.net",
     "timestamp": "2025-06-13T19:20:00Z",
     "isFeatured": false,
-    "category": "food"
+    "category": "food",
+    "image": "https://picsum.photos/id/251/500/250"
   },
   {
     "id": 16,
@@ -129,7 +144,8 @@
     "tag": "Sponsored",
     "timestamp": "2025-06-17T15:10:00Z",
     "isFeatured": true,
-    "category": "food"
+    "category": "food",
+    "image": "https://picsum.photos/id/252/500/250"
   },
   {
     "id": 17,
@@ -138,7 +154,8 @@
     "tag": "Sponsored",
     "timestamp": "2025-06-14T10:30:00Z",
     "isFeatured": false,
-    "category": "entertainment"
+    "category": "entertainment",
+    "image": "https://picsum.photos/id/253/500/250"
   },
   {
     "id": 18,
@@ -146,6 +163,7 @@
     "source": "movienightmag.com",
     "timestamp": "2025-06-16T17:40:00Z",
     "isFeatured": true,
-    "category": "entertainment"
+    "category": "entertainment",
+    "image": "https://picsum.photos/id/254/500/250"
   }
 ]

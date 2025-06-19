@@ -2,6 +2,7 @@
   <ul>
     <li v-for="item in items" :key="item.id">
       <article>
+        <img :src="item.image" :alt="item.title">
         <h2>{{ item.title }}</h2>
         <p>{{ item.source }}</p>
         <p v-if="item.tag">{{ item.tag }}</p>
