@@ -1,12 +1,8 @@
 <template>
   <div class="tabs">
     <nav class="tab-buttons">
-      <button
-        v-for="(tab, index) in tabs"
-        :key="index"
-        :class="{ active: selectedTab === tab.id }"
-        @click="handleClick(tab.id)"
-      >
+      <button v-for="(tab, index) in tabs" :key="index" :class="{ active: selectedTab === tab.id }"
+        @click="handleClick(tab.id)">
         {{ tab.label }}
       </button>
     </nav>
@@ -35,6 +31,7 @@ const handleClick = tab => emit('selectTab', tab)
   display: flex;
   gap: 0.5rem;
   margin-top: 5rem;
+  flex-wrap: wrap;
 }
 
 .tab-buttons button {
