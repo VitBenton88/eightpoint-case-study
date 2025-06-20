@@ -1,6 +1,6 @@
 <script setup>
-import { ref, computed } from 'vue'
-import { useAsyncData } from '#app'
+import { ref, computed, watch } from 'vue'
+import { useFetch } from '#app'
 import NewsFeed from '@/components/NewsFeed.vue'
 import TabNav from '@/components/TabNav.vue'
 
@@ -17,17 +17,30 @@ const tabs = [
 ]
 
 const selectedTab = ref('home')
+const showLoader = ref(false)
 
-const { data: articles } = await useAsyncData(
-  'articles',
-  () => $fetch('/api/news', {
-    query: { category: selectedTab.value }
-  }),
-  { watch: [selectedTab] }
+const { data: articles, status } = useFetch(
+  () => `/api/news?category=${selectedTab.value}`,
+  {
+    watch: [selectedTab],
+    key: `category-${selectedTab.value}`,
+    immediate: true
+  }
 )
 
 const featuredArticle = computed(() => {
   return articles.value?.find(article => article.isFeatured) || {}
+})
+
+watch(status, newStatus => {
+  if (newStatus == 'pending') {
+    showLoader.value = true
+  } else {
+    // delay hiding loader to allow for smoother UX
+    setTimeout(() => {
+      showLoader.value = false
+    }, 300)
+  }
 })
 
 const selectTab = tabId => selectedTab.value = tabId
@@ -36,7 +49,8 @@ const selectTab = tabId => selectedTab.value = tabId
 <template>
   <div class="filter-wrapper">
     <TabNav :tabs :selected-tab @select-tab="selectTab" />
-    <NewsFeed :items="articles" :featured="featuredArticle" />
+    <div v-if="showLoader">Loading News ...</div>
+    <NewsFeed v-else :items="articles || []" :featured="featuredArticle" />
   </div>
 </template>
 
