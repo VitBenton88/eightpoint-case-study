@@ -1,7 +1,7 @@
 <script setup>
 import AnchorLink from './AnchorLink.vue';
 
-const { items, featured } = defineProps({
+defineProps({
   articles: {
     type: Array,
     required: true
