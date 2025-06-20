@@ -5,7 +5,7 @@ import AppIcon from './AppIcon.vue';
 const links = [
   { href: 'https://facebook.com', icon: 'uil:facebook', label: 'Facebook', color: '#1877F2' },
   { href: 'https://youtube.com', icon: 'uil:youtube', label: 'YouTube', color: '#FF0000' },
-  { href: 'https://spotify.com', icon: 'uil:music', label: 'Spotify', color: '#1ED760' },
+  { href: 'https://spotify.com', icon: 'icons:spotify-icon', label: 'Spotify' },
   { href: 'https://dribbble.com', icon: 'uil:dribbble', label: 'Dribble', color: '#ea4c89' },
   { href: 'https://paypal.com', icon: 'uil:paypal', label: 'PayPal', color: '#00457C' },
 ]
