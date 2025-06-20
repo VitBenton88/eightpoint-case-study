@@ -47,6 +47,10 @@ const handleClick = tab => emit('selectTab', tab)
   transition: border-bottom .3s;
 }
 
+.tab-buttons button:hover {
+  border-bottom: solid 3px #cbd1ff;
+}
+
 .tab-buttons button.active {
   border-bottom-color: #3047fa;
 }
