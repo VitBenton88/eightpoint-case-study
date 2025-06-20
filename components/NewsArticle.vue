@@ -44,8 +44,11 @@ const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US',
 </script>
 
 <template>
-  <article ref="rootRef" :class="{ featured: isFeatured }"
-    :style="isFeatured ? { backgroundImage: `url(${article.image})` } : {}">
+  <article
+    ref="rootRef"
+    :class="{ featured: isFeatured }"
+    :style="isFeatured ? { backgroundImage: `url(${article.image})` } : {}"
+  >
     <img v-if="!isFeatured" :src="article.image" :alt="article.title">
     <p v-if="article.tag" class="article-tag">
       {{ article.tag }}
