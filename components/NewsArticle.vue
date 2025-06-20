@@ -1,5 +1,13 @@
 <script setup>
-import AnchorLink from './AnchorLink.vue';
+import { ref } from 'vue'
+import { useIntersectionObserver } from '@/composables/useIntersectionObserver'
+import AnchorLink from './AnchorLink.vue'
+
+const rootRef = ref(null)
+
+useIntersectionObserver(rootRef, (entry) => {
+  console.log('tile_shown event:', entry.target)
+})
 
 const { isFeatured } = defineProps({
   article: {
@@ -36,10 +44,8 @@ const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US',
 </script>
 
 <template>
-  <article 
-    :class="{ featured: isFeatured }"
-    :style="isFeatured ? { backgroundImage: `url(${article.image})` } : {}"
-  >
+  <article ref="rootRef" :class="{ featured: isFeatured }"
+    :style="isFeatured ? { backgroundImage: `url(${article.image})` } : {}">
     <img v-if="!isFeatured" :src="article.image" :alt="article.title">
     <p v-if="article.tag" class="article-tag">
       {{ article.tag }}

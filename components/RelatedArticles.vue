@@ -1,6 +1,13 @@
 <script setup>
+import { ref } from 'vue'
 import AnchorLink from './AnchorLink.vue';
 import AppIcon from './AppIcon.vue';
+
+const rootRef = ref(null)
+
+useIntersectionObserver(rootRef, (entry) => {
+  console.log('tile_shown event:', entry.target)
+})
 
 defineProps({
   articles: {
