@@ -1,7 +1,7 @@
 <script setup>
 import AnchorLink from './AnchorLink.vue';
 
-defineProps({
+const { isFeatured } = defineProps({
   article: {
     type: Object,
     default: () => ({
@@ -19,34 +19,38 @@ defineProps({
 })
 
 const truncateHeading = text => {
-  const maxLength = 40
+  const maxLength = isFeatured ? 100 : 40
 
   if (!text) return ''
   return text.length > maxLength
     ? text.slice(0, maxLength).trim() + '...'
     : text
 }
+
+const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US', {
+  timeZone: 'UTC',
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric'
+})
 </script>
 
 <template>
   <article 
-    :class="{ featured: isFeatured, hasFeaturedTag: isFeatured && article.tag }"
+    :class="{ featured: isFeatured }"
     :style="isFeatured ? { backgroundImage: `url(${article.image})` } : {}"
   >
     <img v-if="!isFeatured" :src="article.image" :alt="article.title">
-    <p 
-      v-if="isFeatured && article.tag" 
-      class="article-tag"
-    >
+    <p v-if="article.tag" class="article-tag">
       {{ article.tag }}
     </p>
     <div class="details">
       <div class="summary">
+        <p>{{ article.source }}</p>
         <AnchorLink :href="article.href" target="_blank" :aria-label="article.title">
           <h2>{{ truncateHeading(article.title) }}</h2>
         </AnchorLink>
-        <p>{{ article.source }}</p>
-        <p>{{ article.timestamp }}</p>
+        <p>{{ getReadableDate(article.timestamp) }}</p>
       </div>
     </div>
   </article>
@@ -59,38 +63,8 @@ article {
   overflow: hidden;
   min-height: calc(340px - 1rem);
   height: 100%;
-}
-
-.featured {
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 1rem;
-}
-
-.featured.hasFeaturedTag {
-  justify-content: space-between;
-}
-
-.featured .article-tag {
-  margin: 0;
-}
-
-.featured h2,
-.featured p {
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-}
-
-.details {
-  padding: 0 .5em;
-}
-
-.featured .details {
-  padding: 0;
+  position: relative;
+  z-index: 5;
 }
 
 img {
@@ -104,5 +78,51 @@ a {
 
 h2 {
   font-size: 16px;
+}
+
+a,
+h2 {
+  transition: color .3s;
+}
+
+.featured {
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.article-tag {
+  color: white;
+  position: absolute;
+  left: .5rem;
+  top: 0;
+  z-index: 1;
+}
+
+.article-tag,
+.featured h2,
+.featured p {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.featured h2 {
+  font-size: 18px;
+}
+
+.details {
+  padding: 0 .5em;
+}
+
+.featured .details {
+  padding: 0;
+}
+
+article a:hover {
+  color: #3047fa;
 }
 </style>

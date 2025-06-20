@@ -17,9 +17,6 @@ const tabs = [
 ]
 
 const selectedTab = ref('home')
-const featuredArticle = computed(() => {
-  return articles.value?.find(article => article.isFeatured) || {}
-})
 
 const { data: articles } = await useAsyncData(
   'articles',
@@ -28,6 +25,10 @@ const { data: articles } = await useAsyncData(
   }),
   { watch: [selectedTab] }
 )
+
+const featuredArticle = computed(() => {
+  return articles.value?.find(article => article.isFeatured) || {}
+})
 
 const selectTab = tabId => selectedTab.value = tabId
 </script>
