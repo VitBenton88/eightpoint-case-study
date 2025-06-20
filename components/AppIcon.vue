@@ -1,5 +1,9 @@
 <script setup>
 defineProps({
+  color: {
+    type: String,
+    default: ''
+  },
   name: {
     type: String,
     default: ''
@@ -13,6 +17,6 @@ defineProps({
 
 <template>
   <div>
-    <Icon :name="name" :size="size" />
+    <Icon :name="name" :size="size" :style="{ color }" />
   </div>
 </template>
