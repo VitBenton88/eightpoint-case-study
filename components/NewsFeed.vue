@@ -21,7 +21,7 @@ const filteredItems = computed(() => {
 <template>
   <ul :class="{ hasFeatured: featured?.id }">
     <li v-if="featured?.id">
-      <NewsArticle :article="featured" isFeatured />
+      <NewsArticle :article="featured" :is-featured="true" />
     </li>
     <li v-for="item in filteredItems" :key="item.id">
       <NewsArticle :article="item" />
