@@ -35,7 +35,7 @@ const handleClick = tab => emit('selectTab', tab)
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 2rem 2rem 2rem 0;
+  padding: 1rem 2rem 2rem 0;
 }
 
 .tab-buttons button {

@@ -23,7 +23,7 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(calc(340px - 1rem), 1fr));
   gap: 1rem;
   list-style: none;
-  margin: 0;
+  margin: 1rem 0 0;
   padding: 0;
 }
 </style>
