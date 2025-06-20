@@ -14,12 +14,12 @@ const { items, featured } = defineProps({
 })
 
 const filteredItems = computed(() => {
-  return items.filter(item => item.id !== featured?.id)
+  return items?.filter(item => item.id !== featured?.id)
 })
 </script>
 
 <template>
-  <ul :class="{ hasFeatured: featured?.id }">
+  <ul v-if="filteredItems.length" :class="{ hasFeatured: featured?.id }">
     <li v-if="featured?.id">
       <NewsArticle :article="featured" :is-featured="true" />
     </li>
@@ -27,6 +27,7 @@ const filteredItems = computed(() => {
       <NewsArticle :article="item" />
     </li>
   </ul>
+  <p v-else>No news articles to display.</p>
 </template>
 
 <style scoped>
