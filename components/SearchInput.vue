@@ -24,7 +24,6 @@ const handleSubmit = () => {
 form {
   background: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border: 1px solid #666;
   border-radius: 25px;
   display: flex;
   margin-top: 2rem;

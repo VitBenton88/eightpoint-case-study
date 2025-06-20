@@ -10,24 +10,17 @@ defineProps({
 </script>
 
 <template>
-  <div class="feed">
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        <NewsArticle :article="item" />
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <li v-for="item in items" :key="item.id">
+      <NewsArticle :article="item" />
+    </li>
+  </ul>
 </template>
 
 <style scoped>
-.feed {
-  max-width: 900px;
-  width: 100%;
-}
-
 ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(190px - 1rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(calc(340px - 1rem), 1fr));
   gap: 1rem;
   list-style: none;
   margin: 0;

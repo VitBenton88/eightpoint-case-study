@@ -20,7 +20,8 @@ const handleClick = tab => emit('selectTab', tab)
     <nav class="tab-buttons">
       <button 
         v-for="(tab, index) in tabs"
-        :key="index" :class="{ active: selectedTab === tab.id }"
+        :key="index"
+        :class="{ active: selectedTab === tab.id }"
         @click="handleClick(tab.id)"
       >
         {{ tab.label }}
@@ -34,7 +35,7 @@ const handleClick = tab => emit('selectTab', tab)
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0;
 }
 
 .tab-buttons button {

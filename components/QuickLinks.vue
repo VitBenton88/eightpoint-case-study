@@ -33,7 +33,7 @@ ul {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  margin: 2rem 0 0;
+  margin: 3rem 0;
   padding: 0;
   width: 100%;
 }

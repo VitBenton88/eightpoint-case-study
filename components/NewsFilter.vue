@@ -30,6 +30,18 @@ const selectTab = tabId => selectedTab.value = tabId
 </script>
 
 <template>
-  <TabNav :tabs :selected-tab @select-tab="selectTab" />
-  <NewsFeed :items="articles" />
+  <div class="filter-wrapper">
+    <TabNav :tabs :selected-tab @select-tab="selectTab" />
+    <NewsFeed :items="articles" />
+  </div>
 </template>
+
+<style scoped>
+.filter-wrapper {
+  background: white;
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+}
+</style>
