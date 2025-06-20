@@ -1,7 +1,7 @@
 // composables/useIntersectionObserver.js
 import { onMounted, onBeforeUnmount } from 'vue'
 
-export function useIntersectionObserver(targetRef, callback, options = { threshold: 0.1 }) {
+export function useIntersectionObserver(targetRef, callback, options = { threshold: .5 }) {
   let observer
 
   onMounted(() => {
