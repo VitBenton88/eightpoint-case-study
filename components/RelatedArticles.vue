@@ -34,7 +34,7 @@ const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US',
 </script>
 
 <template>
-  <section>
+  <section ref="rootRef">
     <header>
       <h2>Related Stories</h2>
     </header>
