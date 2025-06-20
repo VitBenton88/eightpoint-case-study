@@ -34,7 +34,12 @@ const truncateHeading = text => {
     :style="isFeatured ? { backgroundImage: `url(${article.image})` } : {}"
   >
     <img v-if="!isFeatured" :src="article.image" :alt="article.title">
-    <p v-if="isFeatured && article.tag" class="article-tag">{{ article.tag }}</p>
+    <p 
+      v-if="isFeatured && article.tag" 
+      class="article-tag"
+    >
+      {{ article.tag }}
+    </p>
     <div class="details">
       <div class="summary">
         <AnchorLink :href="article.href" target="_blank" :aria-label="article.title">
