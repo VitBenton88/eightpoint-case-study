@@ -1,6 +1,6 @@
 import articles from '~/server/mock/news.json'
 
-export default serveNewsFeed(event => {
+export default eventHandler(event => {
   const query = getQuery(event)
   const category = query.category?.toLowerCase()
 
