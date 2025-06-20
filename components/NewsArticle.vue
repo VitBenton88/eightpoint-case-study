@@ -41,6 +41,10 @@ const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US',
   month: 'short',
   day: 'numeric'
 })
+
+const handleClick = title => {
+  console.log('tile_clicked event:', title)
+}
 </script>
 
 <template>
@@ -56,7 +60,12 @@ const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US',
     <div class="details">
       <div class="summary">
         <p>{{ article.source }}</p>
-        <AnchorLink :href="article.href" target="_blank" :aria-label="article.title">
+        <AnchorLink
+          :href="article.href"
+          target="_blank"
+          :aria-label="article.title"
+          @click="() => handleClick(article.title)"
+        >
           <h2>{{ truncateHeading(article.title) }}</h2>
         </AnchorLink>
         <p>{{ getReadableDate(article.timestamp) }}</p>
