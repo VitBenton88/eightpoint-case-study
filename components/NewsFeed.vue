@@ -33,11 +33,15 @@ const filteredItems = computed(() => {
       <NewsArticle :article="filteredItems[0]" />
     </li>
 
+    <li v-if="filteredItems?.[1]">
+      <NewsArticle :article="filteredItems[1]" />
+    </li>
+
     <li>
       <RelatedArticles :articles="related" />
     </li>
 
-    <li v-for="item in filteredItems.slice(1)" :key="item.id">
+    <li v-for="item in filteredItems.slice(2)" :key="item.id">
       <NewsArticle :article="item" />
     </li>
   </ul>
