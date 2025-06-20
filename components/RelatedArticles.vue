@@ -1,5 +1,6 @@
 <script setup>
 import AnchorLink from './AnchorLink.vue';
+import AppIcon from './AppIcon.vue';
 
 defineProps({
   articles: {
@@ -35,7 +36,10 @@ const getReadableDate = timestamp => new Date(timestamp).toLocaleString('en-US',
       <li v-for="article in articles" :key="article.id">
         <article>
           <header>
-            <span>{{ article.category }}</span>
+            <span class="category">
+              <AppIcon name="uil:sun" size="12" />
+              {{ article.category }}
+            </span>
             <span class="timestamp">{{ getReadableDate(article.timestamp) }}</span>
           </header>
           <AnchorLink :href="article.href" target="_blank" :aria-label="article.title">
@@ -89,5 +93,10 @@ li {
 
 .timestamp {
   color: #979797;
+}
+
+.category {
+  display: flex;
+  gap: .5rem;
 }
 </style>
