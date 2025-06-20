@@ -20,7 +20,7 @@ defineProps({
 <style scoped>
 ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(340px - 1rem), 1fr));
+  grid-template-columns: repeat(4, minmax(calc(340px - 1rem), 1fr));
   gap: 1rem;
   list-style: none;
   margin: 0;
