@@ -40,14 +40,15 @@ const handleClick = tab => emit('selectTab', tab)
 
 .tab-buttons button {
   padding: 0.5rem 1rem;
-  background: #eee;
+  background: transparent;
   border: none;
+  border-bottom: solid 3px transparent;
   cursor: pointer;
+  transition: border-bottom .3s;
 }
 
 .tab-buttons button.active {
-  background: #333;
-  color: white;
+  border-bottom-color: #3047fa;
 }
 
 .tab-content {
