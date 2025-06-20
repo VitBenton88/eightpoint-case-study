@@ -19,7 +19,7 @@ const filteredItems = computed(() => {
 </script>
 
 <template>
-  <ul v-if="filteredItems.length" :class="{ hasFeatured: featured?.id }">
+  <ul v-if="filteredItems?.length" :class="{ hasFeatured: featured?.id }">
     <li v-if="featured?.id">
       <NewsArticle :article="featured" :is-featured="true" />
     </li>
