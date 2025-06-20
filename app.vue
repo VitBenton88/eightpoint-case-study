@@ -8,8 +8,11 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
   background: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
