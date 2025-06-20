@@ -85,6 +85,10 @@ h2 {
   transition: color .3s;
 }
 
+article a:hover {
+  color: #3047fa;
+}
+
 .featured {
   background-size: cover;
   background-position: center;
@@ -110,6 +114,10 @@ h2 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+.featured a:hover h2 {
+  color: #cbd1ff;
+}
+
 .featured h2 {
   font-size: 18px;
 }
@@ -120,9 +128,5 @@ h2 {
 
 .featured .details {
   padding: 0;
-}
-
-article a:hover {
-  color: #3047fa;
 }
 </style>
