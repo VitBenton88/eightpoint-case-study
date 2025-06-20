@@ -1,17 +1,29 @@
 <script setup>
+import { computed } from 'vue'
 import NewsArticle from '@/components/NewsArticle.vue'
 
-defineProps({
+const { items, featured } = defineProps({
+  featured: {
+    type: Object,
+    required: true
+  },
   items: {
     type: Array,
     required: true
   }
 })
+
+const filteredItems = computed(() => {
+  return items.filter(item => item.id !== featured?.id)
+})
 </script>
 
 <template>
-  <ul>
-    <li v-for="item in items" :key="item.id">
+  <ul :class="{ hasFeatured: featured?.id }">
+    <li v-if="featured?.id">
+      <NewsArticle :article="featured" isFeatured />
+    </li>
+    <li v-for="item in filteredItems" :key="item.id">
       <NewsArticle :article="item" />
     </li>
   </ul>
@@ -25,6 +37,14 @@ ul {
   list-style: none;
   margin: 1rem 0 0;
   padding: 0;
+}
+
+ul.hasFeatured {
+  grid-template-columns: repeat(auto-fit, minmax(calc(340px - 1rem), 1fr));
+}
+
+ul.hasFeatured>li:first-child {
+  grid-column: span 2;
 }
 
 @media (max-width: 600px) {

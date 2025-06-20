@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useAsyncData } from '#app'
 import NewsFeed from '@/components/NewsFeed.vue'
 import TabNav from '@/components/TabNav.vue'
@@ -17,6 +17,9 @@ const tabs = [
 ]
 
 const selectedTab = ref('home')
+const featuredArticle = computed(() => {
+  return articles.value?.find(article => article.isFeatured) || {}
+})
 
 const { data: articles } = await useAsyncData(
   'articles',
@@ -32,7 +35,7 @@ const selectTab = tabId => selectedTab.value = tabId
 <template>
   <div class="filter-wrapper">
     <TabNav :tabs :selected-tab @select-tab="selectTab" />
-    <NewsFeed :items="articles" />
+    <NewsFeed :items="articles" :featured="featuredArticle" />
   </div>
 </template>
 
