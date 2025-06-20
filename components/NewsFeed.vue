@@ -26,4 +26,10 @@ ul {
   margin: 1rem 0 0;
   padding: 0;
 }
+
+@media (max-width: 600px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
