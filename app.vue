@@ -7,7 +7,11 @@
   </main>
 </template>
 
-<style scoped>
+<style>
+body {
+  background: #f2f2f2;
+}
+
 main {
   align-items: center;
   display: flex;
