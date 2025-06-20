@@ -50,11 +50,15 @@ ul {
 }
 
 .icon-wrap {
+  align-items: center;
   background-color: white;
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  justify-content: center;
   margin-bottom: .5rem;
-  padding: 5px;
+  height: 50px;
+  width: 50px;
 }
 
 .action-list-item,
